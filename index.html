@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="registration" class="container">
+        <h2>Registration Form</h2>
+        <input type="text" id="regUsername" placeholder="Enter Username" required>
+        <input type="password" id="regPassword" placeholder="Enter Password" required>
+        <input type="file" id="profileImage" accept="image/*">
+        <button onclick="register()">REGISTER</button>
+    </div>
+
+    <div id="login" class="container" style="display:none;">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Enter Username">
+        <input type="password" id="loginPassword" placeholder="Enter Password">
+        <p id="errorMessage" class="error"></p>
+        <button onclick="login()">LOG IN</button>
+    </div>
+
+    <div id="welcome" class="container" style="display:none;">
+        <h2>WELCOME, <span id="displayUsername"></span></h2>
+        <img id="displayImage" src="" alt="Profile Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
